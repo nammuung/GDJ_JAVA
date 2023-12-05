@@ -11,16 +11,23 @@ public class Study3For {
 	
 	System.out.println("초를 입력하세요.");
 	int sec=sc.nextInt();
-	
+	boolean flag=false;
 	for(int i=min; i<60; i++) {
 //		System.out.println(i+"분");
 		
 		for(int j=sec;j<60;j++) {
 			System.out.println(i+"분"+j+"초");
-//			break;			
-		} //안쪽 포문 종료
+			if(min==i && sec==j) {
+				flag=!flag;
+//				break;
+			} // if 종료	
+		}  // 안쪽 for문 종료
+//		if(flag) {
+//			break;
+//		} //안쪽 for문 if
 		break;
-	} // 바깥 쪽 포문 종료
+	} // 바깥 쪽 for 종료
+	
 
 }
 }
