@@ -25,7 +25,15 @@ public class Test {
 			}else {
 				System.out.println("미성년자임");
 			}
+			human = new Human();
 			human.age=500;
+		}
+		
+		
+		public void t4(int [] ar) {
+			for(int i=0;i<ar.length;i++) {
+				System.out.println(ar[i]);
+			}
 		}
 		
 
