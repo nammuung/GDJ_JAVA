@@ -7,11 +7,9 @@ public class SchoolController {
 	
 	public void start() {
 		Scanner sc = new Scanner(System.in);
-//		Student student = new Student();
-		SchoolView schoolView = new SchoolView();
 		SchoolService schoolService = new SchoolService();
+		SchoolView schoolView = new SchoolView();
 		Student [] students = null;
-		
 		
 		boolean check=true;
 		
@@ -34,9 +32,15 @@ public class SchoolController {
 				break;
 				
 			case 3:
-				
+				Student s = schoolService.findByNum(students);
+				if(s != null) {
+					schoolView.view(s);
+				}else {
+					schoolView.view("학생이 없다");
+				}
 				break;
 			case 4:
+				students = schoolService.addStudent();
 				break;
 				
 			default:
