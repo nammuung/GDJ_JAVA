@@ -1,20 +1,20 @@
 package com.winter.study3.rpg;
 
+import com.winter.study3.rpg.weapon.Axe;
+import com.winter.study3.rpg.weapon.Bow;
+
 public class RpgMain {
 
 	public static void main(String[] args) {
-		Magiction magiction = new Magiction();
-		magiction.name="winter";
-		magiction.hp=100;
-		magiction.mp=200;
+
+		Worrier worrier = new Worrier();
+		Axe axe = new Axe();
+		worrier.setWeapone(axe);
+		worrier.getWeapone().attack();
 		
-		Magiction magiction2 = new Magiction();
-		magiction2.name="iu";
-		magiction.info();
-		System.out.println(magiction);
-		magiction2.info();
-		System.out.println(magiction2);
-	
+		Bow bow = new Bow();
+		worrier.setWeapone(bow);
+		worrier.getWeapone().attack();
 		
 		
 
