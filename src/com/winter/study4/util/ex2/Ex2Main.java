@@ -10,7 +10,7 @@ public class Ex2Main {
 //		int num = random.nextInt(10);//0 ~ 10 미만
 //		System.out.println(num);
 		StudySetInfo s = new StudySetInfo();
-		s.ex2();
+		s.ex1();
 
 	}
 

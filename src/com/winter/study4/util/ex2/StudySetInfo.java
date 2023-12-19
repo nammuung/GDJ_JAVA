@@ -1,3 +1,4 @@
+
 package com.winter.study4.util.ex2;
 
 import java.util.ArrayList;
@@ -10,6 +11,23 @@ public class StudySetInfo {
 	
 	public void ex0() {
 		//배열
+		int [] ar = new int [6];
+		Random random = new Random();
+		
+		for(int i=0;i<ar.length;i++) {
+			ar[i]=random.nextInt(44)+1;
+			//같은지 비교
+			for(int j=0;j<i;j++) {
+				if(ar[i]==ar[j]) {
+					i--;
+					break;
+				}
+			}
+		}
+		
+		for(int i:ar) {
+			System.out.println(i);
+		}
 		
 	}
 	
