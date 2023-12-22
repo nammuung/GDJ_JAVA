@@ -1,8 +1,9 @@
 package com.winter.study7;
 
 public class ServerMain {
-	public static void main(String[] args) {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
 		try {
 			new Server().s();
@@ -10,6 +11,7 @@ public class ServerMain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
+
 }

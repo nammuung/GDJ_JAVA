@@ -1,11 +1,10 @@
-package com.winter.study6.ex1;
+package com.winter.study7.ex1.client;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Vector;
 
-public class WeatherView {
+import com.winter.study6.ex1.WeatherDTO;
+
+public class ClientView {
 	
 	public void view(WeatherDTO weatherDTO) {
 		if(weatherDTO == null) {

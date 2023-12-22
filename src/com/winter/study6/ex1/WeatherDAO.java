@@ -36,7 +36,7 @@ public class WeatherDAO {
 		File file = new File("c:\\study\\weather");
 		String [] names = file.list();
 		String [] test = {"3.txt", "2.txt", "4.txt"};
-//		long [] name=new long [names.length];
+		//long [] name=new long [names.length];
 		//for, while
 		long max=0;
 		
@@ -59,37 +59,37 @@ public class WeatherDAO {
 		
 
 		
-//	
-//		
-//		file = new File(file, max+".txt");
-//		FileReader fr = new FileReader(file);
-//		BufferedReader br = new BufferedReader(fr);
-//		br.readLine();
-//		while(true) {
-//			String s = br.readLine();
-//			if(s ==null) {
-//				break;
-//			}
-//			
-//			//파싱 - split, StringTokenizer
-//			
-//			System.out.println(s);
-//			StringTokenizer st = new StringTokenizer(s, "-");
-//			//서울-12-맑음-60
-//			WeatherDTO weatherDTO = new WeatherDTO();
-//			
-//			weatherDTO.setCity(st.nextToken());
-//			weatherDTO.setGion(Integer.parseInt(st.nextToken()));
-//			weatherDTO.setInfo(st.nextToken());
-//			weatherDTO.setHum(Integer.parseInt(st.nextToken()));
-//			
-//			ar.add(weatherDTO);
-//			
-//		}
-//		
-//		br.close();
-//		fr.close();
-//		
+	
+		
+		file = new File(file, max+".txt");
+		FileReader fr = new FileReader(file);
+		BufferedReader br = new BufferedReader(fr);
+		br.readLine();
+		while(true) {
+			String s = br.readLine();
+			if(s ==null) {
+				break;
+			}
+			
+			//파싱 - split, StringTokenizer
+			
+			System.out.println(s);
+			StringTokenizer st = new StringTokenizer(s, "-");
+			//서울-12-맑음-60
+			WeatherDTO weatherDTO = new WeatherDTO();
+			
+			weatherDTO.setCity(st.nextToken());
+			weatherDTO.setGion(Integer.parseInt(st.nextToken()));
+			weatherDTO.setInfo(st.nextToken());
+			weatherDTO.setHum(Integer.parseInt(st.nextToken()));
+			
+			ar.add(weatherDTO);
+			
+		}
+		
+		br.close();
+		fr.close();
+		
 		
 		return ar;
 		
