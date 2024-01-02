@@ -33,7 +33,7 @@ public class WeatherDAO {
 		
 		
 		ArrayList<WeatherDTO> ar = new ArrayList<>();
-		File file = new File("c:\\study\\weather");
+		File file = new File("c:\\study\\Weather");
 		String [] names = file.list();
 		String [] test = {"3.txt", "2.txt", "4.txt"};
 		//long [] name=new long [names.length];
